@@ -1,0 +1,83 @@
+/* Estilos gerais */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #262626;
+    height: 100vh;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    color: #f8fafc;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 0 0 5px #333333;
+}
+
+/* Estilos do formulário */
+
+.form-group label {
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #cbd5e1;
+}
+
+.form-control {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #262626;
+    padding: 5px 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 2px;
+    background-color: #cbd5e1;
+}
+
+.form-control[type="number"]::-webkit-outer-spin-button,
+.form-control[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.form-control:focus {
+    outline: none;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+button.calculate-button {
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #f8fafc;
+    background-color: #08682b;
+    padding: 0.5rem 0;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Mensagens de erro e resultados */
+.result-message,
+.error-message {
+    font-size: large;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
